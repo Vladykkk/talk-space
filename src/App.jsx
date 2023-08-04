@@ -1,11 +1,12 @@
-import { useState } from "react";
+import Login from "./components/login/Login";
+import { Wrapper } from "./components/Styles/common";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <p>Hello World!</p>
+      <Wrapper>
+        <Login />
+      </Wrapper>
     </>
   );
 }
