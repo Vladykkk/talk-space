@@ -4,8 +4,7 @@ import {
   Title,
   LoginContainer,
   LoginButtons,
-  ButtonLeft,
-  ButtonRight,
+  Button,
   Header,
 } from "./styles";
 import FirstPlanet from "../../img/login/first-planet.png";
@@ -23,14 +22,14 @@ const Login = () => {
       <LoginContainer>
         <Title>Ласкаво просимо!</Title>
         <LoginButtons>
-          <ButtonLeft>
+          <Button>
             <p>Увійти в робочий простір</p>
             <img src={FirstPlanet} alt="" />
-          </ButtonLeft>
-          <ButtonRight>
+          </Button>
+          <Button>
             <p>Створити робочий простір</p>
             <img src={SecondPlanet} alt="" />
-          </ButtonRight>
+          </Button>
         </LoginButtons>
       </LoginContainer>
     </Wrapper>

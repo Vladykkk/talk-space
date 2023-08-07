@@ -12,8 +12,11 @@ export const Wrapper = styled.div`
 export const Header = styled.div`
   display: flex;
   align-items: center;
-  min-height: 50px;
+  min-height: 110px;
   width: 100%;
+  a {
+    margin-left: 50px;
+  }
 `;
 
 export const LoginContainer = styled.div`
@@ -25,20 +28,30 @@ export const LoginContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 48px;
+  font-size: 3rem;
   font-family: "Inter";
   margin-bottom: 100px;
 `;
 
 export const LoginButtons = styled.div`
   display: flex;
-  gap: 200px;
+  gap: 100px;
 `;
 
-export const ButtonLeft = styled.div`
+export const Button = styled.div`
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.5rem;
   cursor: pointer;
-`;
-
-export const ButtonRight = styled.div`
-  cursor: pointer;
+  border: 2px solid #9181fa;
+  border-radius: 15px;
+  &:hover {
+    border: 2px solid #893fd6;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 5px #dddffd;
+  }
+  p {
+    margin-bottom: 40px;
+  }
 `;
