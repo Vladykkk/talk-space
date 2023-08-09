@@ -1,11 +1,12 @@
-import Login from "./components/login/Login";
-import { Wrapper } from "./components/Styles/common";
+import Welcome from "./pages/login/Welcome";
+import { Wrapper } from "./assets/css/common";
+import "./assets/css/reset.css";
 
 function App() {
   return (
     <>
       <Wrapper>
-        <Login />
+        <Welcome />
       </Wrapper>
     </>
   );
