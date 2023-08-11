@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderContainer } from "../assets/css/registration";
+import { HeaderContainer } from "../assets/css/form";
 import Logo from "../img/logo.png";
 import { Link } from "react-router-dom";
 

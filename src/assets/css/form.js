@@ -30,6 +30,55 @@ export const Main = styled.div`
   justify-content: center;
 `;
 
+export const FormContainer = styled.div`
+  max-width: 570px;
+  width: 100%;
+`;
+
+export const FormItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+`;
+
+export const FormLabel = styled.label`
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+`;
+
+export const StyledFormInput = styled.input`
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid #acacac;
+  border-radius: 10px;
+  &:invalid[focused="true"] {
+    border: 1px solid red;
+  }
+  &:invalid[focused="true"] ~ span {
+    display: block;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  text-align: center;
+`;
+
+export const StyledFormButton = styled.button`
+  width: 275px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #665cb1;
+`;
+
+export const ErrorMessage = styled.span`
+  display: none;
+  padding: 3px;
+  color: red;
+`;
+
 export const Title = styled.h1`
   font-size: 3rem;
   font-family: "Inter";

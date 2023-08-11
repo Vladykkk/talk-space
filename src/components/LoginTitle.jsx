@@ -1,5 +1,5 @@
 import React from "react";
-import { Title } from "../assets/css/registration";
+import { Title } from "../assets/css/form";
 
 const LoginTitle = (props) => {
   return (

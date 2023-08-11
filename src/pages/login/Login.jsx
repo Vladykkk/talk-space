@@ -1,16 +1,16 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
-import { Wrapper, Main } from "../../assets/css/form";
 import Header from "../../parts/Header";
+import { Wrapper, Main } from "../../assets/css/form";
 import LoginTitle from "../../components/LoginTitle";
-import FormButton from "../../components/FormButton";
 import FormInput from "../../components/FormInput";
+import FormButton from "../../components/FormButton";
 import { FormContainer } from "../../assets/css/form";
 
-const Registration = () => {
+const Login = () => {
   const [values, setValues] = useState({
     companyName: "",
     username: "",
+    accessCode: "",
   });
 
   const inputs = [
@@ -27,7 +27,14 @@ const Registration = () => {
       label: "Ім'я Користувача",
       errorMessage:
         "Ім'я користувача має містити від 3 до 16 символів і не повинно містити жодних спеціальних символів!",
+      pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
+    },
+    {
+      id: 3,
+      name: "accessCode",
+      type: "number",
+      label: "Код доступу",
     },
   ];
 
@@ -44,7 +51,7 @@ const Registration = () => {
       <Wrapper>
         <Header />
         <Main>
-          <LoginTitle title="Ласкаво просимо!" />
+          <LoginTitle title="З поверненням!" />
           <FormContainer>
             <form onSubmit={handleSubmit}>
               {inputs.map((input) => (
@@ -55,7 +62,7 @@ const Registration = () => {
                   onChange={onChange}
                 />
               ))}
-              <FormButton ButtonText="Далі" />
+              <FormButton ButtonText="Увійти" />
             </form>
           </FormContainer>
         </Main>
@@ -64,4 +71,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default Login;

@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Wrapper,
-  Main,
-  LoginButtons,
-  Button,
-} from "../../assets/css/registration";
+import { Wrapper, Main, LoginButtons, Button } from "../../assets/css/form";
 import Header from "../../parts/Header";
 import LoginTitle from "../../components/LoginTitle";
 import FirstPlanet from "../../img/login/first-planet.png";
@@ -17,11 +12,11 @@ const Welcome = () => {
       <Main>
         <LoginTitle title="Ласкаво Просимо!" />
         <LoginButtons>
-          <Button>
+          <Button href="/login">
             <h2>Увійти в робочий простір</h2>
             <img src={FirstPlanet} alt="First Planet" />
           </Button>
-          <Button href="registration">
+          <Button href="/registration">
             <h2>Створити робочий простір</h2>
             <img src={SecondPlanet} alt="Second Planet" />
           </Button>
