@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import SkyTop from "../../img/login/sky-top.png";
 import SkyBottom from "../../img/login/sky-bottom.png";
@@ -78,6 +79,17 @@ export const ErrorMessage = styled.span`
   padding: 3px;
   color: red;
 `;
+
+export const ImageContainer = styled(Link)`
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 270px;
+  border: 1px solid #9181fa;
+  border-radius: 5px;
+`;
+
+export const MemberImage = styled.img``;
 
 export const Title = styled.h1`
   font-size: 3rem;
