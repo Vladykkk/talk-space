@@ -1,22 +1,29 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
-import { Wrapper, Main } from "../../assets/css/form";
 import Header from "../../parts/Header";
+import { Wrapper, Main } from "../../assets/css/form";
 import LoginTitle from "../../components/LoginTitle";
 import FormButton from "../../components/FormButton";
 import FormInput from "../../components/FormInput";
 import { FormContainer } from "../../assets/css/form";
 
-const RegistrationSecond = () => {
+const Modal = () => {
   const [values, setValues] = useState({
+    name: "",
     email: "",
-    password: "",
-    confirmPassword: "",
+    department: "",
+    jobTitle: "",
   });
 
   const inputs = [
     {
       id: 1,
+      name: "name",
+      type: "text",
+      label: "Прізвище та ім'я",
+      required: true,
+    },
+    {
+      id: 2,
       name: "email",
       type: "email",
       label: "Електронна пошта",
@@ -24,22 +31,17 @@ const RegistrationSecond = () => {
       required: true,
     },
     {
-      id: 2,
-      name: "password",
-      type: "password",
-      label: "Пароль",
-      errorMessage:
-        "Пароль повинен містити 8-20 символів і включати щонайменше 1 літеру, 1 цифру та 1 спеціальний символ!",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
+      id: 3,
+      name: "department",
+      type: "text",
+      label: "Відділ",
       required: true,
     },
     {
       id: 3,
-      name: "confirmPassword",
-      type: "password",
-      label: "Підтвердіть пароль",
-      errorMessage: "Паролі не співпадають!",
-      pattern: values.password,
+      name: "jobTitle",
+      type: "text",
+      label: "Посада",
       required: true,
     },
   ];
@@ -57,7 +59,6 @@ const RegistrationSecond = () => {
       <Wrapper>
         <Header />
         <Main>
-          <LoginTitle title="Ласкаво просимо!" />
           <FormContainer>
             <form onSubmit={handleSubmit}>
               {inputs.map((input) => (
@@ -68,7 +69,6 @@ const RegistrationSecond = () => {
                   onChange={onChange}
                 />
               ))}
-              <FormButton buttonText="Далі" />
             </form>
           </FormContainer>
         </Main>
@@ -77,4 +77,4 @@ const RegistrationSecond = () => {
   );
 };
 
-export default RegistrationSecond;
+export default Modal;

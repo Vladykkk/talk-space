@@ -5,7 +5,7 @@ const FormButton = (props) => {
   return (
     <div>
       <ButtonContainer>
-        <StyledFormButton type="sumbit">{props.ButtonText}</StyledFormButton>
+        <StyledFormButton type="submit">{props.buttonText}</StyledFormButton>
       </ButtonContainer>
     </div>
   );

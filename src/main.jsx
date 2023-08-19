@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import Registration from "./pages/login/Registration.jsx";
 import RegistrationSecond from "./pages/login/RegistrationSecond.jsx";
 import RegistrationThird from "./pages/login/RegistrationThird.jsx";
+import RegistrationFourth from "./pages/login/RegistrationFourth.jsx";
+import Modal from "./pages/login/Modal.jsx";
 import Login from "./pages/login/Login.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/registrationThird",
     element: <RegistrationThird />,
+  },
+  {
+    path: "/registrationFourth",
+    element: <RegistrationFourth />,
+  },
+  {
+    path: "/modal",
+    element: <Modal />,
   },
   {
     path: "/login",

@@ -54,7 +54,7 @@ const Registration = () => {
                   onChange={onChange}
                 />
               ))}
-              <FormButton ButtonText="Далі" />
+              <FormButton buttonText="Далі" />
             </form>
           </FormContainer>
         </Main>

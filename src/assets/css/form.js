@@ -69,7 +69,7 @@ export const StyledFormButton = styled.button`
   height: 40px;
   margin-top: 20px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   background-color: #665cb1;
 `;
@@ -87,6 +87,58 @@ export const ImageContainer = styled(Link)`
   height: 270px;
   border: 1px solid #9181fa;
   border-radius: 5px;
+`;
+
+// Registration 4
+
+export const Members = styled.div`
+  max-width: 726px;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+`;
+
+export const User = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+  background-color: #f2f0ff;
+  border-radius: 10px;
+`;
+
+export const AddMember = styled(Link)`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  border: 1px solid #9181fa;
+  border-radius: 10px;
+`;
+
+export const UserName = styled.p`
+  font-size: 1.25rem;
+  font-weight: 700;
+`;
+
+export const UserDepartment = styled.p`
+  color: #665cb1;
+  font-size: 1.125rem;
+`;
+
+export const UserImage = styled.img``;
+
+export const CopyLink = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #665cb1;
 `;
 
 export const MemberImage = styled.img``;
@@ -117,7 +169,7 @@ export const Button = styled.a`
     box-shadow: 0 0 5px 5px #dddffd;
   }
   h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 40px;
   }
 `;
