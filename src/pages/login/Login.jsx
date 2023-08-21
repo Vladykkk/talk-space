@@ -62,7 +62,7 @@ const Login = () => {
                   onChange={onChange}
                 />
               ))}
-              <FormButton ButtonText="Увійти" />
+              <FormButton buttonText="Увійти" />
             </form>
           </FormContainer>
         </Main>

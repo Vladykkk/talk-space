@@ -83,10 +83,10 @@ export const ErrorMessage = styled.span`
 export const ImageContainer = styled(Link)`
   display: grid;
   place-items: center;
-  width: 300px;
+  width: 370px;
   height: 270px;
   border: 1px solid #9181fa;
-  border-radius: 5px;
+  border-radius: 10px;
 `;
 
 // Registration 4
@@ -130,8 +130,6 @@ export const UserDepartment = styled.p`
   font-size: 1.125rem;
 `;
 
-export const UserImage = styled.img``;
-
 export const CopyLink = styled.a`
   display: flex;
   align-items: center;
@@ -140,8 +138,6 @@ export const CopyLink = styled.a`
   font-weight: 300;
   color: #665cb1;
 `;
-
-export const MemberImage = styled.img``;
 
 export const Title = styled.h1`
   font-size: 3rem;
@@ -155,7 +151,7 @@ export const LoginButtons = styled.div`
   gap: 100px;
 `;
 
-export const Button = styled.a`
+export const WelcomeButton = styled(Link)`
   width: 300px;
   padding: 30px;
   text-align: center;
@@ -172,4 +168,31 @@ export const Button = styled.a`
     font-size: 1.5rem;
     margin-bottom: 40px;
   }
+`;
+
+// Modal
+
+export const ModalForm = styled.div`
+  max-width: 766px;
+  width: 100%;
+  margin-bottom: 55px;
+  column-count: 2;
+`;
+
+export const ButtonCode = styled.button`
+  width: 315px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #9283fa;
+`;
+
+export const ButtonAdd = styled.button`
+  width: 315px;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #9283fa;
+  border-radius: 10px;
 `;

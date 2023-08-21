@@ -1,10 +1,13 @@
 import { React, useState } from "react";
 import Header from "../../parts/Header";
-import { Wrapper, Main } from "../../assets/css/form";
-import LoginTitle from "../../components/LoginTitle";
-import FormButton from "../../components/FormButton";
+import {
+  Wrapper,
+  Main,
+  ModalForm,
+  ButtonCode,
+  ButtonAdd,
+} from "../../assets/css/form";
 import FormInput from "../../components/FormInput";
-import { FormContainer } from "../../assets/css/form";
 
 const Modal = () => {
   const [values, setValues] = useState({
@@ -59,7 +62,7 @@ const Modal = () => {
       <Wrapper>
         <Header />
         <Main>
-          <FormContainer>
+          <ModalForm>
             <form onSubmit={handleSubmit}>
               {inputs.map((input) => (
                 <FormInput
@@ -70,7 +73,9 @@ const Modal = () => {
                 />
               ))}
             </form>
-          </FormContainer>
+          </ModalForm>
+          <ButtonCode>Згенерувати унікальний код</ButtonCode>
+          <ButtonAdd>Додати</ButtonAdd>
         </Main>
       </Wrapper>
     </div>

@@ -7,10 +7,8 @@ import {
   User,
   UserName,
   UserDepartment,
-  UserImage,
   CopyLink,
   AddMember,
-  MemberImage,
 } from "../../assets/css/form";
 import FormButton from "../../components/FormButton";
 import addMember from "../../img/login/add-member.png";
@@ -27,14 +25,14 @@ const RegistrationFourth = () => {
             <User>
               <UserName>Козак Олександр</UserName>
               <UserDepartment>Розробка/Front end</UserDepartment>
-              <UserImage src={userImg} />
+              <img src={userImg} />
               <CopyLink href="#">
                 <img src={copyIcon} alt="copy icon" />
                 Скопіювати посилання і код
               </CopyLink>
             </User>
             <AddMember>
-              <MemberImage src={addMember} alt="add member" />
+              <img src={addMember} alt="add member" />
             </AddMember>
           </Members>
           <FormButton buttonText="Створити простір!" />

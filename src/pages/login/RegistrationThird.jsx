@@ -1,11 +1,6 @@
 import React from "react";
 import Header from "../../parts/Header";
-import {
-  Wrapper,
-  Main,
-  MemberImage,
-  ImageContainer,
-} from "../../assets/css/form";
+import { Wrapper, Main, ImageContainer } from "../../assets/css/form";
 import LoginTitle from "../../components/LoginTitle";
 import addMember from "../../img/login/add-member.png";
 
@@ -17,7 +12,7 @@ const RegistrationThird = () => {
         <Main>
           <LoginTitle title="Додайте колег у свій простір!" />
           <ImageContainer>
-            <MemberImage src={addMember} alt="add member" />
+            <img src={addMember} alt="add member" />
           </ImageContainer>
         </Main>
       </Wrapper>

@@ -1,5 +1,11 @@
 import React from "react";
-import { Wrapper, Main, LoginButtons, Button } from "../../assets/css/form";
+import { Link } from "react-router-dom";
+import {
+  Wrapper,
+  Main,
+  LoginButtons,
+  WelcomeButton,
+} from "../../assets/css/form";
 import Header from "../../parts/Header";
 import LoginTitle from "../../components/LoginTitle";
 import FirstPlanet from "../../img/login/first-planet.png";
@@ -12,14 +18,14 @@ const Welcome = () => {
       <Main>
         <LoginTitle title="Ласкаво Просимо!" />
         <LoginButtons>
-          <Button href="/login">
+          <WelcomeButton to="/login">
             <h2>Увійти в робочий простір</h2>
             <img src={FirstPlanet} alt="First Planet" />
-          </Button>
-          <Button href="/registration">
+          </WelcomeButton>
+          <WelcomeButton to="/registration">
             <h2>Створити робочий простір</h2>
             <img src={SecondPlanet} alt="Second Planet" />
-          </Button>
+          </WelcomeButton>
         </LoginButtons>
       </Main>
     </Wrapper>
