@@ -22,10 +22,6 @@ const Welcome = () => {
             <h2>Увійти в робочий простір</h2>
             <img src={FirstPlanet} alt="First Planet" />
           </WelcomeButton>
-          <WelcomeButton to="/registration">
-            <h2>Створити робочий простір</h2>
-            <img src={SecondPlanet} alt="Second Planet" />
-          </WelcomeButton>
         </LoginButtons>
       </Main>
     </Wrapper>

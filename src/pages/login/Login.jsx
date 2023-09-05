@@ -8,33 +8,19 @@ import { FormContainer } from "../../assets/css/form";
 
 const Login = () => {
   const [values, setValues] = useState({
-    companyName: "",
     username: "",
-    accessCode: "",
   });
 
   const inputs = [
     {
       id: 1,
-      name: "companyName",
-      type: "text",
-      label: "Назва компанії",
-    },
-    {
-      id: 2,
       name: "username",
       type: "text",
-      label: "Ім'я Користувача",
+      label: "Ім'я користувача",
       errorMessage:
         "Ім'я користувача має містити від 3 до 16 символів і не повинно містити жодних спеціальних символів!",
       pattern: "^[A-Za-z0-9]{3,16}$",
       required: true,
-    },
-    {
-      id: 3,
-      name: "accessCode",
-      type: "number",
-      label: "Код доступу",
     },
   ];
 
