@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
+import "./assets/css/common.css";
+import "./assets/css/register.css";
+import "./assets/css/auth.css";
+
 import App from "./App.jsx";
-import Registration from "./pages/login/Registration.jsx";
-import RegistrationSecond from "./pages/login/RegistrationSecond.jsx";
-import RegistrationThird from "./pages/login/RegistrationThird.jsx";
-import RegistrationFourth from "./pages/login/RegistrationFourth.jsx";
-import Modal from "./pages/login/Modal.jsx";
-import Login from "./pages/login/Login.jsx";
+import Register from "./pages/login/Register.jsx";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -15,28 +16,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/registration",
-    element: <Registration />,
-  },
-  {
-    path: "/registrationSecond",
-    element: <RegistrationSecond />,
-  },
-  {
-    path: "/registrationThird",
-    element: <RegistrationThird />,
-  },
-  {
-    path: "/registrationFourth",
-    element: <RegistrationFourth />,
-  },
-  {
-    path: "/modal",
-    element: <Modal />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
+    path: "/register",
+    element: <Register />,
   },
 ]);
 

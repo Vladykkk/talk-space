@@ -1,14 +1,10 @@
-import Welcome from "./pages/login/Welcome";
-import { Wrapper } from "./assets/css/common";
-import "./assets/css/reset.css";
+import Home from "./pages/login/Home";
 
 function App() {
   return (
-    <>
-      <Wrapper>
-        <Welcome />
-      </Wrapper>
-    </>
+    <div>
+      <Home />
+    </div>
   );
 }
 

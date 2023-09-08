@@ -1,12 +1,12 @@
 import React from "react";
-import { ButtonContainer, StyledFormButton } from "../assets/css/form";
+import "../assets/css/button.css";
 
 const FormButton = (props) => {
   return (
     <div>
-      <ButtonContainer>
-        <StyledFormButton type="submit">{props.buttonText}</StyledFormButton>
-      </ButtonContainer>
+      <button className="button" type="submit">
+        {props.buttonText}
+      </button>
     </div>
   );
 };

@@ -1,16 +1,16 @@
 import React from "react";
-import { HeaderContainer } from "../assets/css/form";
-import Logo from "../img/logo.png";
 import { Link } from "react-router-dom";
+
+import Logo from "../img/logo.png";
 
 const Header = () => {
   return (
     <div>
-      <HeaderContainer>
+      <div className="headerContainer">
         <Link to="/">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="logo" />
         </Link>
-      </HeaderContainer>
+      </div>
     </div>
   );
 };
