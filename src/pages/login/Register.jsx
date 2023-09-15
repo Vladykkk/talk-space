@@ -227,7 +227,7 @@ const Register = () => {
                 >
                   Зареєструватись
                 </button>
-                <p>
+                <p className="account">
                   У вас вже є аккаунт?
                   <br />
                   <span className="line">

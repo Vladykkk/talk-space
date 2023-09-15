@@ -54,7 +54,8 @@ button {
 }
 
 label {
-  margin-bottom: 10px;
+  font-size: 1.125rem;
+  margin-bottom: 5px;
 }
 
 input {
@@ -121,4 +122,8 @@ button {
 
 .line {
   display: inline-block;
+}
+
+.account {
+  margin-top: 25px;
 }
