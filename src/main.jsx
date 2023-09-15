@@ -5,19 +5,29 @@ import "./assets/css/common.css";
 import "./assets/css/register.css";
 import "./assets/css/auth.css";
 
-import App from "./App.jsx";
+import App from "./App";
+import { AuthProvider } from "./context/AuthProvider";
 import Register from "./pages/login/Register.jsx";
+import Login from "./pages/login/Login.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    ),
   },
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 

@@ -2,9 +2,9 @@ import Home from "./pages/login/Home";
 
 function App() {
   return (
-    <div>
+    <main>
       <Home />
-    </div>
+    </main>
   );
 }
 
