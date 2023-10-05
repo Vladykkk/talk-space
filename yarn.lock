@@ -1551,17 +1551,29 @@ __metadata:
   linkType: hard
 
 "glob@npm:^10.2.2":
+<<<<<<< HEAD
   version: 10.3.9
   resolution: "glob@npm:10.3.9"
   dependencies:
     foreground-child: ^3.1.0
     jackspeak: ^2.3.5
+=======
+  version: 10.3.7
+  resolution: "glob@npm:10.3.7"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^2.0.3
+>>>>>>> c4614e1b8fd9365833bb895964aa9b5bc95144c3
     minimatch: ^9.0.1
     minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
     path-scurry: ^1.10.1
   bin:
     glob: dist/esm/bin.mjs
+<<<<<<< HEAD
   checksum: 806a4ef5710beb15577cb0e27a103b39805e009e45e9e63455c385a5db7c4fb793d7399740f21bd133ca58ae6e4e5d56493f0a36bf2985e91eab51d12532f040
+=======
+  checksum: 9a27f1fa8774c3a8ab8f05c26a77276edaf5418aac29aff70c5d847ef75dabf536554cb113e945193323fb769fbe32edde12559d2d52266f38662595cbc7a031
+>>>>>>> c4614e1b8fd9365833bb895964aa9b5bc95144c3
   languageName: node
   linkType: hard
 
@@ -2042,16 +2054,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "jackspeak@npm:^2.3.5":
   version: 2.3.5
   resolution: "jackspeak@npm:2.3.5"
+=======
+"jackspeak@npm:^2.0.3":
+  version: 2.3.3
+  resolution: "jackspeak@npm:2.3.3"
+>>>>>>> c4614e1b8fd9365833bb895964aa9b5bc95144c3
   dependencies:
     "@isaacs/cliui": ^8.0.2
     "@pkgjs/parseargs": ^0.11.0
   dependenciesMeta:
     "@pkgjs/parseargs":
       optional: true
+<<<<<<< HEAD
   checksum: c2c211f13ceffa05f6c2a2fe82667303c81af6f9f53619b9e4fd403207ffe666428a017f61cd43b3478759188917eda14a81f8823b6dd40a8627e46d973a37df
+=======
+  checksum: 4313a7c0cc44c7753c4cb9869935f0b06f4cf96827515f63f58ff46b3d2f6e29aba6b3b5151778397c3f5ae67ef8bfc48871967bd10343c27e90cff198ec7808
+>>>>>>> c4614e1b8fd9365833bb895964aa9b5bc95144c3
   languageName: node
   linkType: hard
 
