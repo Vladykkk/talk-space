@@ -32,7 +32,10 @@ const Login = () => {
         LOGIN_URL,
         JSON.stringify({ user, pwd }),
         {
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
           withCredentials: true,
         }
       );
@@ -40,6 +43,9 @@ const Login = () => {
       // console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
       const roles = response?.data?.roles;
+
+      localStorage.setItem("token", `Bearer ${accessToken}`);
+
       setAuth({ user, pwd, roles, accessToken });
       setUser("");
       setPwd("");
