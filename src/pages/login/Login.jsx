@@ -41,11 +41,9 @@ const Login = () => {
       console.log(JSON.stringify(response?.data));
       // console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
-      const roles = response?.data?.roles;
+      // const roles = response?.data?.roles;
 
-      localStorage.setItem("token", accessToken);
-
-      setAuth({ user, pwd, roles, accessToken });
+      setAuth({ user, pwd, accessToken });
       setUser("");
       setPwd("");
       setSuccess(true);
@@ -85,7 +83,7 @@ const Login = () => {
               >
                 {errMsg}
               </p>
-              <h1>Sign in</h1>
+              <h1>Увійти в аккаунт</h1>
               <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Ім'я користувача:</label>
                 <input
