@@ -44,7 +44,7 @@ const Login = () => {
       const accessToken = response?.data?.accessToken;
       const roles = response?.data?.roles;
 
-      localStorage.setItem("token", `Bearer ${accessToken}`);
+      localStorage.setItem("token", accessToken);
 
       setAuth({ user, pwd, roles, accessToken });
       setUser("");
