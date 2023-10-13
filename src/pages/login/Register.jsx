@@ -10,8 +10,8 @@ import axios from "../../api/axios";
 
 import Header from "../../parts/Header";
 
-const USER_REGEX = /^[a-zA-z][a-zA-Z0-9-_]{3,23}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+const USER_REGEX = /^[a-zA-z][a-zA-Z0-9-_]{2,23}$/;
+const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.).{6,24}$/;
 const REGISTER_URL = "/register";
 
 const Register = () => {
@@ -39,15 +39,11 @@ const Register = () => {
 
   useEffect(() => {
     const result = USER_REGEX.test(user);
-    console.log(result);
-    console.log(user);
     setValidName(result);
   }, [user]);
 
   useEffect(() => {
     const result = PWD_REGEX.test(pwd);
-    console.log(result);
-    console.log(pwd);
     setValidPwd(result);
     const match = pwd === matchPwd;
     setValidMatch(match);
@@ -60,11 +56,10 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    //  if button enabled with JS hack
     const v1 = USER_REGEX.test(user);
     const v2 = PWD_REGEX.test(pwd);
     if (!v1 || !v2) {
-      setErrMsg("Неправильний запис");
+      setErrMsg("Invalid Entry");
       return;
     }
     try {
@@ -76,11 +71,10 @@ const Register = () => {
           withCredentials: true,
         }
       );
-      console.log(response.data);
-      console.log(response.accessToken);
-      console.log(JSON.stringify(response));
       setSuccess(true);
-      // clear input fields
+      setUser("");
+      setPwd("");
+      setMatchPwd("");
     } catch (err) {
       if (!err?.response) {
         setErrMsg("No Server Response");

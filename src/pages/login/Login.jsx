@@ -32,18 +32,13 @@ const Login = () => {
         LOGIN_URL,
         JSON.stringify({ user, pwd }),
         {
-          headers: {
-            "Content-Type": "application/json",
-          },
+          headers: { "Content-Type": "application/json" },
           withCredentials: true,
         }
       );
-      console.log(JSON.stringify(response?.data));
-      // console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
-      // const roles = response?.data?.roles;
-
-      setAuth({ user, pwd, accessToken });
+      const roles = response?.data?.roles;
+      setAuth({ user, pwd, roles, accessToken });
       setUser("");
       setPwd("");
       setSuccess(true);
@@ -83,7 +78,7 @@ const Login = () => {
               >
                 {errMsg}
               </p>
-              <h1>Увійти в аккаунт</h1>
+              <h1 className="title">Увійти в аккаунт</h1>
               <form onSubmit={handleSubmit}>
                 <label htmlFor="username">Ім'я користувача:</label>
                 <input
