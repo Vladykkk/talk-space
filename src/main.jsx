@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import "./assets/css/common.css";
-import "./assets/css/register.css";
+// import "./assets/css/common.css";
+// import "./assets/css/register.css";
+import "./assets/css/index.css";
 
 import App from "./App";
 import { AuthProvider } from "./context/AuthProvider";
